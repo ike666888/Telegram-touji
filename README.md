@@ -46,4 +46,4 @@
 * /leave,Userbot 退出频道,/leave @xxchannel
 
 ## 🚀 部署指南
-暂时还没写比较懒，等我博客更新详细的部署教程会更新到目录。
+部署教程发布在我的博客，文章地址：https://ike-nicholas.xyz/archives/telegram-xiao-xi-wu-hen-ban-yun-tou-ji-ji-qi-ren
