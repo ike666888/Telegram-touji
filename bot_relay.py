@@ -6,8 +6,10 @@ import asyncio
 API_ID = telegram官网申请
 API_HASH = 'telegram官网申请'
 BOT_TOKEN = '你的BOT_TOKEN'
-DEST_CHANNELS = [-1003344631537]
-
+DEST_CHANNELS = [最终转发的频道id]
+# DEST_CHANNELS = [最终转发的频道id]
+# DEST_CHANNELS = [最终转发的频道id]
+# 可以无限添加最终转发的频道
 # === 缓存 ===
 media_group_cache = {}
 media_group_lock = asyncio.Lock()
