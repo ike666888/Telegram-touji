@@ -35,6 +35,15 @@
     * **功能**：使用机器人 Token 登录，接收来自 Userbot 的私聊消息。
     * **处理**：缓存相册媒体、过滤掉所有以 `/` 开头的命令和以 `🤖` 开头的系统回复，最后将清洗后的内容发送到最终目标频道。
 
+##📂 **项目结构**
+.
+├── bot_relay.py        # 🚀 发布端：处理缓存、过滤命令、无痕发送
+├── telegram_bot.py     # 🎧 监听端：处理监听、转发给机器人、响应命令
+├── config.json         # ⚙️ 配置文件：定义监听映射
+├── docker-compose.yml  # 🐳 Docker 编排文件
+├── Dockerfile          # 📄 镜像构建文件
+├── requirements.txt    # 🐍 Python 依赖
+└── anon.session        # 🔐 (自动生成) Userbot 登录凭证
 ## 🚀 部署指南
 
 ### 1. 准备工作
