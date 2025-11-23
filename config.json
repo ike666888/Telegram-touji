@@ -1,6 +1,6 @@
 {
-    "api_id": 官网申请,
-    "api_hash": "官网申请",
+    "api_id": 您的api_id,
+    "api_hash": "您的api_hash",
     "master_account_id": 管理账户ID,
     "bot_mappings": [
         {
