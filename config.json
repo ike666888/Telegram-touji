@@ -1,0 +1,12 @@
+{
+    "api_id": 24072647,
+    "api_hash": "74326637e71d227a805afb5dfb40d8f9",
+    "master_account_id": 7919687304,
+    "bot_mappings": [
+        {
+            "source_chat": -1002601786270,
+            "target_bot": "@iketoujibot"
+        }
+    ],
+    "proxy": null
+}
