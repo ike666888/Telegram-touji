@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO_URL="${REPO_URL:-https://github.com/ikun245/Telegram-touji.git}"
+REPO_URL="${REPO_URL:-}"
 PROJECT_DIR="${PROJECT_DIR:-Telegram-touji}"
 
 if ! command -v docker >/dev/null 2>&1; then
@@ -15,6 +15,12 @@ elif command -v docker-compose >/dev/null 2>&1; then
   COMPOSE_CMD="docker-compose"
 else
   echo "[ERROR] 未检测到 docker compose / docker-compose。"
+  exit 1
+fi
+
+if [ ! -d "$PROJECT_DIR/.git" ] && [ -z "$REPO_URL" ]; then
+  echo "[ERROR] 未设置 REPO_URL，无法自动克隆仓库。"
+  echo "[HINT] 例如: REPO_URL=https://github.com/<你的用户名>/Telegram-touji.git bash scripts/install.sh"
   exit 1
 fi
 

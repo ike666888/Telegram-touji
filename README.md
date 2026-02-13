@@ -3,8 +3,11 @@
 ## 🚀 一键安装（交互填写配置）
 
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/ikun245/Telegram-touji/main/scripts/install.sh)"
+REPO_URL="https://github.com/<你的用户名>/Telegram-touji.git" \
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/<你的用户名>/Telegram-touji/main/scripts/install.sh)"
 ```
+
+> 注意：请替换为你自己的 GitHub 用户名/仓库地址，避免指向他人仓库。
 
 脚本会交互询问并生成：
 - `config.json`
